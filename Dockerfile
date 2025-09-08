@@ -18,7 +18,7 @@ RUN pip3 install -r requirements.txt
 WORKDIR /app
 COPY ./src /app
 RUN mkdir ./models -p
-RUN pip uninstall onnxruntime onnxruntime-gpu
+RUN pip uninstall onnxruntime onnxruntime-gpu -y
 RUN pip install onnxruntime-gpu
 
 RUN python3 download_models.py
