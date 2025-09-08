@@ -37,7 +37,7 @@ def _text_to_speech(text: str, model: str):
     if not state:
         state = PiperVoice.load(
             MODELS[model][0],
-            use_cuda=cuda_version != ''
+            use_cuda=True
         )
         states[model] = state
 
