@@ -17,7 +17,7 @@ services:
           devices:
             - driver: nvidia
               count: 1
-              capabilities: [gpu]
+              capabilities: [cuda]
 networks:
   speech-service:
     driver: bridge
