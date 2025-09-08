@@ -1,0 +1,16 @@
+services:
+  speech-service:
+    mem_limit: 2000m
+    cpus: "1"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: speech-service
+    networks:
+      - speech-service
+    ports:
+      - 8000:8000
+    restart: unless-stopped
+networks:
+  speech-service:
+    driver: bridge
