@@ -16,8 +16,10 @@ from asyncio import to_thread
 from json import load
 from io import BytesIO
 from piper import PiperVoice
-from onnxruntime import cuda_version
 from wave import open as wav_open
+import onnxruntime
+
+onnxruntime.preload_dlls()
 
 with open("./models.json") as fp:
     MODELS = load(fp)

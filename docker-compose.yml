@@ -7,10 +7,10 @@ services:
       dockerfile: Dockerfile
     container_name: speech-service
     networks:
-      - speech-service
+      - tts_network
     ports:
-      - 8000:8000
+      - '127.0.0.1:8000:8000'
     restart: unless-stopped
 networks:
-  speech-service:
+  tts_network:
     driver: bridge

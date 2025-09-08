@@ -7,10 +7,11 @@ services:
       dockerfile: Dockerfile
     container_name: speech-service
     networks:
-      - speech-service
+      - tts_network
     ports:
-      - 8000:8000
+      - '127.0.0.1:8000:8000'
     restart: unless-stopped
+    runtime: nvidia
     deploy:
       resources:
         reservations:
@@ -19,5 +20,5 @@ services:
               count: 1
               capabilities: [cuda]
 networks:
-  speech-service:
+  tts-network:
     driver: bridge
