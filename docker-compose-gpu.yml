@@ -17,8 +17,8 @@ services:
         reservations:
           devices:
             - driver: nvidia
-              count: 1
-              capabilities: [cuda]
+              count: all
+              capabilities: [gpu]
 networks:
   tts-network:
     driver: bridge
