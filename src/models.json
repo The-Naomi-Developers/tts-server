@@ -4,7 +4,7 @@
         "https://huggingface.co/rhasspy/piper-voices/resolve/main/ru/ru_RU/ruslan/medium/ru_RU-ruslan-medium.onnx?download=true"
     ],
     "en_ryan": [
-        "./models/en_US-ryan-high.onnx",
-        "https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/ryan/high/en_US-ryan-high.onnx?download=true"
+        "./models/en_US-ryan-medium.onnx",
+        "https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/ryan/medium/en_US-ryan-medium.onnx?download=true"
     ]
 }

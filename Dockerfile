@@ -23,4 +23,4 @@ RUN pip install onnxruntime-gpu
 
 RUN python3 download_models.py
 
-CMD ["python3", "-m", "fastapi", "run", "app.py"]
+CMD ["python3", "-m", "fastapi", "run", "app.py", "--host", "0.0.0.0", "--port", "8000"]
